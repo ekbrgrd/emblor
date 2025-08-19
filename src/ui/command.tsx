@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { type DialogProps } from '@radix-ui/react-dialog';
+import { Dialog as DialogPrimitive } from 'radix-ui';
 import { Command as CommandPrimitive } from 'cmdk';
 
 import { Dialog, DialogContent } from '../ui/dialog';
@@ -22,7 +22,7 @@ const Command = React.forwardRef<
 ));
 Command.displayName = CommandPrimitive.displayName;
 
-interface CommandDialogProps extends DialogProps {}
+interface CommandDialogProps extends DialogPrimitive.DialogProps {}
 
 const CommandDialog = ({ children, ...props }: CommandDialogProps) => {
   return (
