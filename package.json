@@ -30,7 +30,7 @@
   "lint-staged": {
     "*.{ts,tsx,md,mdx}": [
       "prettier --write",
-      "tsc-files --noEmit"
+      "tsc-files --noEmit --project packages/emblor/tsconfig.json"
     ],
     "*.{js,jsx,json}": [
       "prettier --write"
